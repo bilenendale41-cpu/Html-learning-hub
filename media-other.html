@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Hub - Media and ARIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Learning Hub</h1>
+        <p>Media, Interactive Elements and Accessibility</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+
+        <a href="index.html">Basic HTML</a>
+        <a href="text-tags.html">Text & Lists</a>
+        <a href="structure-forms.html">Structure & Forms</a>
+        <a href="media-other.html">Media & ARIA</a>
+
+    </nav>
+
+    <main>
+
+        <section class="intro">
+
+            <h2>Media Elements</h2>
+
+            <p>
+                HTML provides elements for images, audio,
+                video and other content.
+            </p>
+
+        </section>
+
+        <section>
+
+            <div class="tag-container">
+
+                <div class="tag-card">
+                    <h3>&lt;audio&gt;</h3>
+                    <p>Adds audio to a webpage.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;video&gt;</h3>
+                    <p>Adds video to a webpage.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;source&gt;</h3>
+                    <p>Provides a media source.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;track&gt;</h3>
+                    <p>Provides subtitles or captions.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;picture&gt;</h3>
+                    <p>Allows different images to be used.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;iframe&gt;</h3>
+                    <p>Embeds another webpage.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;canvas&gt;</h3>
+                    <p>Provides an area for JavaScript graphics.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;map&gt;</h3>
+                    <p>Creates an image map.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;area&gt;</h3>
+                    <p>Creates a clickable area in an image map.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Interactive Elements</h2>
+
+            <div class="tag-container">
+
+                <div class="tag-card">
+
+                    <h3>&lt;details&gt;</h3>
+
+                    <p>
+                        Creates content that can be opened and closed.
+                    </p>
+
+                    <details>
+
+                        <summary>
+                            Click to learn more
+                        </summary>
+
+                        <p>
+                            HTML creates the structure of webpages.
+                        </p>
+
+                    </details>
+
+                </div>
+
+                <div class="tag-card">
+
+                    <h3>&lt;summary&gt;</h3>
+
+                    <p>
+                        Creates the visible title for details.
+                    </p>
+
+                </div>
+
+                <div class="tag-card">
+
+                    <h3>&lt;dialog&gt;</h3>
+
+                    <p>
+                        Represents a dialog box.
+                    </p>
+
+                </div>
+
+                <div class="tag-card">
+
+                    <h3>&lt;progress&gt;</h3>
+
+                    <p>
+                        Shows the progress of a task.
+                    </p>
+
+                    <progress value="70" max="100"></progress>
+
+                </div>
+
+                <div class="tag-card">
+
+                    <h3>&lt;meter&gt;</h3>
+
+                    <p>
+                        Shows a measurement within a range.
+                    </p>
+
+                    <meter value="7" min="0" max="10"></meter>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Other Important Elements</h2>
+
+            <div class="tag-container">
+
+                <div class="tag-card">
+                    <h3>&lt;meta&gt;</h3>
+                    <p>Provides information about the webpage.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;link&gt;</h3>
+                    <p>Connects an HTML document to another resource.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;style&gt;</h3>
+                    <p>Contains CSS code.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;script&gt;</h3>
+                    <p>Adds or connects JavaScript.</p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;noscript&gt;</h3>
+                    <p>Shows content when JavaScript is unavailable.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>ARIA Attributes</h2>
+
+            <p>
+                ARIA means
+                <strong>Accessible Rich Internet Applications</strong>.
+            </p>
+
+            <p>
+                ARIA attributes help make webpages more accessible
+                to people who use screen readers and other assistive technologies.
+            </p>
+
+            <div class="tag-container">
+
+                <div class="tag-card">
+                    <h3>aria-label</h3>
+                    <p>Gives an element an accessible name.</p>
+                    <code>aria-label="Close menu"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-hidden</h3>
+                    <p>Tells assistive technology to ignore an element.</p>
+                    <code>aria-hidden="true"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-live</h3>
+                    <p>Tells screen readers about changing content.</p>
+                    <code>aria-live="polite"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-expanded</h3>
+                    <p>Shows whether something is expanded or collapsed.</p>
+                    <code>aria-expanded="false"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-controls</h3>
+                    <p>Identifies the element controlled by another element.</p>
+                    <code>aria-controls="menu"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-labelledby</h3>
+                    <p>Connects an element to another element that labels it.</p>
+                    <code>aria-labelledby="title"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-describedby</h3>
+                    <p>Connects an element to a description.</p>
+                    <code>aria-describedby="help"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-current</h3>
+                    <p>Identifies the current item in a set.</p>
+                    <code>aria-current="page"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-disabled</h3>
+                    <p>Indicates that an element is disabled.</p>
+                    <code>aria-disabled="true"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-required</h3>
+                    <p>Indicates that an input is required.</p>
+                    <code>aria-required="true"</code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>aria-selected</h3>
+                    <p>Indicates that an item is selected.</p>
+                    <code>aria-selected="true"</code>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="example">
+
+            <h2>ARIA Example</h2>
+
+            <button
+                aria-label="Open information"
+                aria-expanded="false"
+                onclick="showAriaMessage()">
+
+                Information
+
+            </button>
+
+            <p
+                id="ariaMessage"
+                aria-live="polite">
+            </p>
+
+        </section>
+
+        <section class="example">
+
+            <h2>Important Difference</h2>
+
+            <p><strong>HTML Element:</strong></p>
+
+            <pre>
+&lt;button&gt;Click Me&lt;/button&gt;
+            </pre>
+
+            <p><strong>HTML Attribute:</strong></p>
+
+            <pre>
+&lt;button type="button"&gt;
+            </pre>
+
+            <p><strong>ARIA Attribute:</strong></p>
+
+            <pre>
+&lt;button aria-label="Close"&gt;
+            </pre>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>HTML Learning Hub &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

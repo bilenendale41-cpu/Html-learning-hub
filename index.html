@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A beginner-friendly HTML learning website">
+
+    <title>HTML Learning Hub - Basic HTML</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Learning Hub</h1>
+        <p>Learn HTML Elements, Tags and Attributes</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Basic HTML</a>
+        <a href="text-tags.html">Text & Lists</a>
+        <a href="structure-forms.html">Structure & Forms</a>
+        <a href="media-accessibility.html">Media & Accessibility</a>
+    </nav>
+
+    <main>
+
+        <section class="intro">
+
+            <h2>Basic HTML Elements</h2>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                HTML is used to create the structure of webpages.
+            </p>
+
+            <button onclick="showMessage()">
+                What is HTML?
+            </button>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Document Elements</h2>
+
+            <div class="tag-container">
+
+                <div class="tag-card">
+                    <h3>&lt;!DOCTYPE html&gt;</h3>
+                    <p>
+                        Tells the browser that the document uses HTML5.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;html&gt;</h3>
+                    <p>
+                        The root element of an HTML document.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;head&gt;</h3>
+                    <p>
+                        Contains information about the webpage.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;title&gt;</h3>
+                    <p>
+                        Defines the title shown in the browser tab.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;body&gt;</h3>
+                    <p>
+                        Contains the visible content of the webpage.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;meta&gt;</h3>
+                    <p>
+                        Provides information about the HTML document.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;link&gt;</h3>
+                    <p>
+                        Connects the HTML document to another resource,
+                        such as a CSS file.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Text and Basic Elements</h2>
+
+            <div class="tag-container">
+
+                <div class="tag-card">
+                    <h3>&lt;h1&gt; - &lt;h6&gt;</h3>
+                    <p>
+                        Creates headings. H1 is the most important heading.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;p&gt;</h3>
+                    <p>
+                        Creates a paragraph.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;br&gt;</h3>
+                    <p>
+                        Creates a line break.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;hr&gt;</h3>
+                    <p>
+                        Creates a horizontal/thematic line.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;div&gt;</h3>
+                    <p>
+                        Creates a block-level container.
+                    </p>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;span&gt;</h3>
+                    <p>
+                        Creates an inline container for text or other content.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Links and Images</h2>
+
+            <div class="tag-container">
+
+                <div class="tag-card">
+                    <h3>&lt;a&gt;</h3>
+                    <p>
+                        Creates a hyperlink.
+                    </p>
+
+                    <code>
+                        &lt;a href="page.html"&gt;Visit&lt;/a&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>&lt;img&gt;</h3>
+                    <p>
+                        Displays an image.
+                    </p>
+
+                    <code>
+                        &lt;img src="photo.jpg" alt="Photo"&gt;
+                    </code>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Global Attributes</h2>
+
+            <p>
+                Global attributes can be used on many different HTML elements.
+            </p>
+
+            <div class="tag-container">
+
+                <div class="tag-card">
+                    <h3>id</h3>
+                    <p>
+                        Gives an element a unique identifier.
+                    </p>
+
+                    <code>
+                        &lt;p id="intro"&gt;Hello&lt;/p&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>class</h3>
+                    <p>
+                        Gives an element one or more classes.
+                        CSS and JavaScript can use classes.
+                    </p>
+
+                    <code>
+                        &lt;p class="important"&gt;Hello&lt;/p&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>style</h3>
+                    <p>
+                        Adds CSS directly to an element.
+                    </p>
+
+                    <code>
+                        &lt;p style="color: blue;"&gt;Hello&lt;/p&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>title</h3>
+                    <p>
+                        Provides extra information, often shown as a tooltip.
+                    </p>
+
+                    <code>
+                        &lt;p title="More information"&gt;Hello&lt;/p&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>lang</h3>
+                    <p>
+                        Specifies the language of the content.
+                    </p>
+
+                    <code>
+                        &lt;html lang="en"&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>hidden</h3>
+                    <p>
+                        Hides an element from the page.
+                    </p>
+
+                    <code>
+                        &lt;p hidden&gt;Hidden text&lt;/p&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>tabindex</h3>
+                    <p>
+                        Controls keyboard navigation order.
+                    </p>
+
+                    <code>
+                        &lt;button tabindex="0"&gt;Click&lt;/button&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>contenteditable</h3>
+                    <p>
+                        Allows the user to edit content directly.
+                    </p>
+
+                    <code>
+                        &lt;p contenteditable="true"&gt;Edit me&lt;/p&gt;
+                    </code>
+                </div>
+
+                <div class="tag-card">
+                    <h3>data-*</h3>
+                    <p>
+                        Stores custom data on an HTML element.
+                    </p>
+
+                    <code>
+                        &lt;div data-id="10"&gt;&lt;/div&gt;
+                    </code>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="example">
+
+            <h2>Basic HTML Example</h2>
+
+            <pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+
+    &lt;p&gt;This is my webpage.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+            </pre>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>HTML Learning Hub &copy; 2026</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
